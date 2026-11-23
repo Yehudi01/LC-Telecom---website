@@ -1,0 +1,15 @@
+# Materiais de referência e rascunhos (não fazem parte do site publicado)
+_referencias/
+
+# Configurações pessoais do editor
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e dependências (caso um dia o projeto ganhe build)
+node_modules/
+*.log

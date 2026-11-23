@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>LC Telecom | Internet Fibra Óptica, via Rádio e Rural em Brasília-DF</title>
+  <meta name="description" content="LC Telecom: há mais de uma década cuidando da sua conexão. Internet Fibra Óptica, via Rádio e Rural em Brasília-DF, com alta performance, transparência total e suporte próximo." />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Open Graph (compartilhamento em WhatsApp/Instagram/Facebook) -->
+  <!-- PLACEHOLDER: quando o domínio definitivo estiver no ar, troque og:url e use URL absoluta em og:image -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LC Telecom | Há mais de uma década cuidando da sua conexão" />
+  <meta property="og:description" content="Internet Fibra Óptica, via Rádio e Rural em Brasília-DF. Assine já pelo WhatsApp." />
+  <meta property="og:image" content="assets/img/logo.webp" />
+  <meta property="og:url" content="https://lctelecomunicacoes.net.br/" />
+
+  <!-- Marca que o JS está ativo: sem JS, nada fica escondido (preloader/animações dependem disso) -->
+  <script>document.documentElement.classList.add('js')</script>
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Fonte única (Saira, variável): estilo técnico/arredondado alinhado ao "telecom" do logo.
+       display=swap: o texto aparece imediatamente com a fonte do sistema se a conexão estiver lenta. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@75..100,400..800&display=swap" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Dados estruturados para o Google (negócio local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InternetServiceProvider",
+    "name": "LC Telecom",
+    "slogan": "Há mais de uma década cuidando da sua conexão",
+    "telephone": ["+55-61-99695-5196", "+55-61-99909-9256"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "DF 150 KM 12, LT 144, AP Sala 206",
+      "addressLocality": "Brasília",
+      "addressRegion": "DF",
+      "postalCode": "73150-065",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Distrito Federal",
+    "sameAs": ["https://www.instagram.com/lctelecomdf/"]
+  }
+  </script>
+</head>
+
+<body class="is-loading">
+
+  <!-- =========================================================
+       ÍCONES (sprite SVG inline — zero requisições extras)
+       Uso: <svg class="i"><use href="#i-wifi"/></svg>
+       ========================================================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-wifi" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M2 8.8a15 15 0 0 1 20 0M5 12.4a10.5 10.5 0 0 1 14 0M8.5 15.9a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19.3" r="1.5" fill="currentColor"/></symbol>
+      <symbol id="i-fiber" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 20c4-1 6-4 7-8s3-7 8-8"/><path d="M6 21c3-1 5-3.5 6-7s3-6.5 7-7.5" opacity=".55"/><path d="M3 16.5c3-.8 4.6-3 5.4-6S11 4.8 15 3.5" opacity=".55"/></g><circle cx="19.5" cy="4" r="1.6" fill="currentColor"/></symbol>
+      <symbol id="i-antenna" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11v10M8.5 21h7M12 11l-3.5 10M12 11l3.5 10"/><path d="M7.8 6.8a6 6 0 0 0 0 8.4M16.2 6.8a6 6 0 0 1 0 8.4" transform="translate(0 -4)"/><path d="M4.9 3.9a10 10 0 0 0 0 14.2M19.1 3.9a10 10 0 0 1 0 14.2" transform="translate(0 -4)" opacity=".55"/></g><circle cx="12" cy="7" r="1.8" fill="currentColor"/></symbol>
+      <symbol id="i-rural" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21v-8l5-4 5 4v8"/><path d="M8.5 21v-4h3v4"/><path d="M17 21v-6M17 9.5a2 2 0 1 0 0 .01"/><path d="M14.2 6.7a4 4 0 0 1 5.6 0M12.6 5a6.3 6.3 0 0 1 8.8 0" opacity=".7"/></g></symbol>
+      <symbol id="i-tv" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="13" rx="2.5"/><path d="M8 21h8M9 2.5 12 5l3-2.5"/><path d="m10.3 9 4 2.5-4 2.5z" fill="currentColor"/></g></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12z"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10v-6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></g></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4.5" height="6.5" rx="1.5"/><rect x="17" y="13" width="4.5" height="6.5" rx="1.5"/><path d="M19.5 19.5c0 1.5-1.5 2.5-4.5 2.5h-2"/></g></symbol>
+      <symbol id="i-signal" viewBox="0 0 24 24"><g fill="currentColor"><rect x="3" y="15" width="3.4" height="6" rx="1"/><rect x="8.2" y="11" width="3.4" height="10" rx="1"/><rect x="13.4" y="7" width="3.4" height="14" rx="1"/><rect x="18.6" y="3" width="3.4" height="18" rx="1"/></g></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6.9 6.9l1.5-2.3L21 15.5V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></g></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" d="M4 11.5C4 7.4 6.4 4.6 10 4l.6 1.8C8.4 6.6 7.4 8.1 7.3 10H10v8H4zm10 0c0-4.1 2.4-6.9 6-7.5l.6 1.8c-2.2.8-3.2 2.3-3.3 4.2H20v8h-6z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></g></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></g><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- =========================================================
+       PRELOADER (some sozinho em até ~1,8s — nunca trava a página
+       em conexões lentas; ver initPreloader() em main.js)
+       ========================================================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__signal">
+        <span></span><span></span><span></span>
+      </div>
+      <img src="assets/img/logo-lc.png" alt="" class="preloader__logo" width="180" height="145" />
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- =========================================================
+       HEADER FIXO
+       ========================================================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__brand" aria-label="LC Telecom — voltar ao início">
+        <img src="assets/img/logo-lc.png" alt="LC Telecom" width="70" height="56" />
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#planos" class="nav__link">Planos</a></li>
+          <li><a href="#cobertura" class="nav__link">Cobertura</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--red btn--block" data-wa href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener">
+            <svg class="i"><use href="#i-whatsapp"/></svg> Assine já
+          </a>
+          <div class="nav__mobile-social">
+            <a href="https://www.instagram.com/lctelecomdf/" target="_blank" rel="noopener"><svg class="i"><use href="#i-instagram"/></svg> @lctelecomdf</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Facebook e LinkedIn não encontrados: ícones omitidos.
+             Para adicionar, copie um <a class="social"> abaixo e troque o link/ícone. -->
+        <a class="social" href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" data-wa target="_blank" rel="noopener" aria-label="WhatsApp da LC Telecom">
+          <svg class="i"><use href="#i-whatsapp"/></svg>
+        </a>
+        <a class="social" href="https://www.instagram.com/lctelecomdf/" target="_blank" rel="noopener" aria-label="Instagram @lctelecomdf">
+          <svg class="i"><use href="#i-instagram"/></svg>
+        </a>
+        <a class="btn btn--red btn--sm header__cta" data-wa href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener">Assine já</a>
+        <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+    <section class="hero" id="inicio">
+      <!-- Fundo: linhas de "fibra" animadas em SVG (leve, sem imagens) -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <div class="hero__grid"></div>
+        <svg class="hero__fibers" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="fiberGrad" x1="0" x2="1">
+              <stop offset="0" stop-color="#E31E24" stop-opacity="0"/>
+              <stop offset=".6" stop-color="#E31E24" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#ff6b6f" stop-opacity="1"/>
+            </linearGradient>
+          </defs>
+          <path class="fiber fiber--1" d="M-50 620 C 300 560, 520 700, 820 520 S 1250 300, 1500 340"/>
+          <path class="fiber fiber--2" d="M-50 700 C 260 660, 600 760, 900 600 S 1300 420, 1500 460"/>
+          <path class="fiber fiber--3" d="M-50 540 C 340 470, 560 600, 860 430 S 1220 180, 1500 210"/>
+          <path class="fiber fiber--4" d="M-50 760 C 400 740, 700 800, 1000 690 S 1350 560, 1500 590"/>
+        </svg>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow reveal" style="--d:.05s">
+            <span class="eyebrow__dot"></span> Provedor de internet · Brasília-DF
+          </p>
+
+          <h1 class="hero__title reveal" style="--d:.15s">
+            Há mais de uma <span class="hl">década</span><br />
+            cuidando da sua <span class="hl hl--underline">conexão</span>
+          </h1>
+
+          <p class="hero__lead reveal" style="--d:.25s">
+            Alta performance, transparência total e suporte próximo — da cidade ao campo.
+          </p>
+
+          <ul class="hero__services reveal" style="--d:.35s" aria-label="Serviços">
+            <li><svg class="i"><use href="#i-fiber"/></svg> Internet Fibra Óptica</li>
+            <li><svg class="i"><use href="#i-antenna"/></svg> Internet via Rádio</li>
+            <li><svg class="i"><use href="#i-rural"/></svg> Internet Rural</li>
+          </ul>
+
+          <div class="hero__ctas reveal" style="--d:.45s">
+            <a class="btn btn--red btn--lg btn--glow" data-wa href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener">
+              <svg class="i"><use href="#i-whatsapp"/></svg> Assine já pelo WhatsApp
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#planos">
+              Ver planos <svg class="i"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero__trust reveal" style="--d:.55s">
+            <li><strong><span data-count="10">10</span>+</strong> anos de mercado</li>
+            <li><strong>DF</strong> atendimento local</li>
+            <li><strong>Urbano</strong> &amp; rural</li>
+          </ul>
+        </div>
+
+        <!-- Oferta em destaque (único preço confirmado no Instagram).
+             PLACEHOLDER: confirme velocidade/valor vigentes antes de publicar. -->
+        <div class="hero__visual reveal reveal--scale" style="--d:.3s">
+          <div class="orb" aria-hidden="true">
+            <span class="orb__ring orb__ring--1"></span>
+            <span class="orb__ring orb__ring--2"></span>
+            <span class="orb__ring orb__ring--3"></span>
+            <span class="orb__pulse"></span>
+            <span class="orb__pulse orb__pulse--2"></span>
+          </div>
+
+          <article class="offer" data-plan="Internet 640 MEGA + TV por R$119,00">
+            <div class="offer__top">
+              <span class="tag tag--red"><svg class="i"><use href="#i-bolt"/></svg> Oferta destaque</span>
+              <svg class="offer__wifi" aria-hidden="true"><use href="#i-wifi"/></svg>
+            </div>
+            <div class="offer__speed">
+              <span class="offer__num">640</span>
+              <span class="offer__unit">MEGA</span>
+            </div>
+            <p class="offer__combo"><svg class="i"><use href="#i-plus"/></svg> Internet + TV</p>
+            <div class="price price--xl">
+              <span class="price__cur">R$</span>
+              <span class="price__int">119</span>
+              <span class="price__side"><span class="price__cents">,00</span><span class="price__per">/mês</span></span>
+            </div>
+            <a class="btn btn--red btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">
+              Quero esse plano <svg class="i"><use href="#i-arrow"/></svg>
+            </a>
+            <!-- PLACEHOLDER: ajuste a observação legal conforme as condições reais da oferta -->
+            <p class="offer__note">*Sujeito à viabilidade técnica no endereço.</p>
+          </article>
+
+          <div class="float-chip float-chip--a" aria-hidden="true">
+            <svg class="i"><use href="#i-signal"/></svg>
+            <span><strong>Alta performance</strong>conexão estável</span>
+          </div>
+          <div class="float-chip float-chip--b" aria-hidden="true">
+            <svg class="i"><use href="#i-headset"/></svg>
+            <span><strong>Suporte próximo</strong>atendimento local</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#diferenciais" class="hero__scroll" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- =========================================================
+         FAIXA DE DIFERENCIAIS
+         ========================================================= -->
+    <section class="features" id="diferenciais" aria-label="Diferenciais">
+      <div class="container">
+        <ul class="features__list">
+          <li class="feature reveal">
+            <span class="feature__icon"><svg class="i"><use href="#i-bolt"/></svg></span>
+            <div><h3>Alta performance</h3><p>Velocidade e estabilidade para sua rotina.</p></div>
+          </li>
+          <li class="feature reveal" style="--d:.08s">
+            <span class="feature__icon"><svg class="i"><use href="#i-shield"/></svg></span>
+            <div><h3>Transparência total</h3><p>Segurança e confiança em cada etapa.</p></div>
+          </li>
+          <li class="feature reveal" style="--d:.16s">
+            <span class="feature__icon"><svg class="i"><use href="#i-headset"/></svg></span>
+            <div><h3>Suporte próximo</h3><p>Gente da região, que resolve de verdade.</p></div>
+          </li>
+          <li class="feature reveal" style="--d:.24s">
+            <span class="feature__icon"><svg class="i"><use href="#i-rural"/></svg></span>
+            <div><h3>Até na zona rural</h3><p>Cobertura onde outros não chegam.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SOBRE — A LC TELECOM
+         ========================================================= -->
+    <section class="section about" id="sobre">
+      <div class="container about__inner">
+        <div class="about__visual reveal reveal--left">
+          <div class="years">
+            <svg class="years__arcs" viewBox="0 0 200 120" aria-hidden="true">
+              <path d="M20 110a80 80 0 0 1 160 0" />
+              <path d="M45 110a55 55 0 0 1 110 0" />
+              <path d="M70 110a30 30 0 0 1 60 0" />
+            </svg>
+            <p class="years__num"><span>+</span><span data-count="10">10</span></p>
+            <p class="years__label">anos conectando<br />o Distrito Federal</p>
+          </div>
+          <ul class="about__pills">
+            <li><svg class="i"><use href="#i-check"/></svg> Trabalho</li>
+            <li><svg class="i"><use href="#i-check"/></svg> Estudos</li>
+            <li><svg class="i"><use href="#i-check"/></svg> Entretenimento</li>
+            <li><svg class="i"><use href="#i-check"/></svg> Negócios</li>
+          </ul>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span> Quem somos</p>
+          <h2 class="section__title reveal">A <span class="hl">LC Telecom</span></h2>
+          <p class="about__lead reveal">
+            Referência em conexão de alto padrão. Atuando há mais de uma década, oferecemos
+            desempenho e estabilidade para acompanhar sua rotina, seja no trabalho ou nos estudos.
+          </p>
+          <p class="reveal">
+            Somos especialistas em conectar pessoas e impulsionar negócios por meio da tecnologia.
+          </p>
+
+          <div class="about__cards">
+            <article class="card-glass reveal">
+              <span class="card-glass__icon"><svg class="i"><use href="#i-shield"/></svg></span>
+              <h3>Transparência total</h3>
+              <p>Nosso compromisso é garantir que cada cliente tenha segurança e confiança em cada etapa da sua jornada conosco.</p>
+              <p class="card-glass__sign">Compromisso além da tecnologia.</p>
+            </article>
+            <article class="card-glass reveal" style="--d:.1s">
+              <span class="card-glass__icon"><svg class="i"><use href="#i-wifi"/></svg></span>
+              <h3>Conexão de alto padrão</h3>
+              <p>Fibra óptica, rádio e soluções rurais: a tecnologia certa para levar internet de qualidade até você.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faixa animada com os serviços -->
+    <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>Internet Fibra Óptica</span><i></i><span>Internet via Rádio</span><i></i><span>Internet Rural</span><i></i><span>Internet + TV</span><i></i>
+        <span>Internet Fibra Óptica</span><i></i><span>Internet via Rádio</span><i></i><span>Internet Rural</span><i></i><span>Internet + TV</span><i></i>
+      </div>
+    </div>
+    </div>
+
+    <!-- =========================================================
+         PLANOS
+         Como editar: cada <article class="plan"> é um card.
+         - Velocidade: .plan__num
+         - Preço: .price__int (reais) e .price__cents (centavos)
+         - data-plan: texto enviado na mensagem do WhatsApp ao clicar em "Contratar"
+         Todos os valores marcados com data-placeholder ainda são exemplos.
+         Dica: abra a página com ?placeholders no fim da URL para destacá-los.
+         ========================================================= -->
+    <section class="section plans" id="planos">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span> Nossos planos</p>
+          <h2 class="section__title reveal">Escolha o seu novo <span class="hl">plano</span></h2>
+          <p class="section__sub reveal">Três tecnologias para levar internet de qualidade a qualquer endereço do DF — da cidade ao campo.</p>
+        </header>
+
+        <!-- Comparativo das tecnologias (clicar seleciona a aba correspondente) -->
+        <div class="tech reveal">
+          <button class="tech__item" data-tab-target="fibra">
+            <span class="tech__icon"><svg class="i"><use href="#i-fiber"/></svg></span>
+            <span class="tech__name">Fibra Óptica</span>
+            <span class="tech__desc">Máxima velocidade e estabilidade, ideal para streaming, jogos e home office.</span>
+          </button>
+          <button class="tech__item" data-tab-target="radio">
+            <span class="tech__icon"><svg class="i"><use href="#i-antenna"/></svg></span>
+            <span class="tech__name">Via Rádio</span>
+            <span class="tech__desc">Conexão sem fio de qualidade para regiões ainda sem rede de fibra.</span>
+          </button>
+          <button class="tech__item" data-tab-target="rural">
+            <span class="tech__icon"><svg class="i"><use href="#i-rural"/></svg></span>
+            <span class="tech__name">Rural</span>
+            <span class="tech__desc">Internet para chácaras, sítios e propriedades afastadas.</span>
+          </button>
+        </div>
+
+        <div class="tabs reveal" role="tablist" aria-label="Tipos de plano">
+          <button class="tabs__btn is-active" role="tab" id="tab-fibra" aria-controls="panel-fibra" aria-selected="true" data-tab="fibra"><svg class="i"><use href="#i-fiber"/></svg> Fibra Óptica</button>
+          <button class="tabs__btn" role="tab" id="tab-radio" aria-controls="panel-radio" aria-selected="false" data-tab="radio" tabindex="-1"><svg class="i"><use href="#i-antenna"/></svg> Via Rádio</button>
+          <button class="tabs__btn" role="tab" id="tab-rural" aria-controls="panel-rural" aria-selected="false" data-tab="rural" tabindex="-1"><svg class="i"><use href="#i-rural"/></svg> Rural</button>
+          <button class="tabs__btn" role="tab" id="tab-tv" aria-controls="panel-tv" aria-selected="false" data-tab="tv" tabindex="-1"><svg class="i"><use href="#i-tv"/></svg> Internet + TV</button>
+          <span class="tabs__ink" aria-hidden="true"></span>
+        </div>
+
+        <!-- ---------- FIBRA ÓPTICA ----------
+             PLACEHOLDER: velocidades e preços abaixo são EXEMPLOS.
+             Substitua pela tabela oficial de planos de fibra. -->
+        <div class="plans__panel is-active" role="tabpanel" id="panel-fibra" aria-labelledby="tab-fibra">
+          <article class="plan" data-plan="Fibra Óptica 300 MEGA">
+            <p class="plan__type">Fibra Óptica</p>
+            <p class="plan__speed"><span class="plan__num" data-placeholder>300</span><span class="plan__unit">MEGA</span></p>
+            <div class="price">
+              <span class="price__cur">R$</span><span class="price__int" data-placeholder>XX</span>
+              <span class="price__side"><span class="price__cents" data-placeholder>,90</span><span class="price__per">/mês</span></span>
+            </div>
+            <ul class="plan__list">
+              <li><svg class="i"><use href="#i-check"/></svg> Ideal para navegar e estudar</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Conexão estável</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Suporte local</li>
+            </ul>
+            <a class="btn btn--outline btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">Contratar</a>
+          </article>
+
+          <article class="plan plan--featured" data-plan="Fibra Óptica 500 MEGA">
+            <span class="plan__badge">Mais procurado</span><!-- PLACEHOLDER: confirme qual plano destacar -->
+            <p class="plan__type">Fibra Óptica</p>
+            <p class="plan__speed"><span class="plan__num" data-placeholder>500</span><span class="plan__unit">MEGA</span></p>
+            <div class="price">
+              <span class="price__cur">R$</span><span class="price__int" data-placeholder>XX</span>
+              <span class="price__side"><span class="price__cents" data-placeholder>,90</span><span class="price__per">/mês</span></span>
+            </div>
+            <ul class="plan__list">
+              <li><svg class="i"><use href="#i-check"/></svg> Streaming e home office</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Vários aparelhos conectados</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Suporte local</li>
+            </ul>
+            <a class="btn btn--red btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">Contratar</a>
+          </article>
+
+          <article class="plan" data-plan="Fibra Óptica 640 MEGA">
+            <p class="plan__type">Fibra Óptica</p>
+            <p class="plan__speed"><span class="plan__num" data-placeholder>640</span><span class="plan__unit">MEGA</span></p>
+            <div class="price">
+              <span class="price__cur">R$</span><span class="price__int" data-placeholder>XX</span>
+              <span class="price__side"><span class="price__cents" data-placeholder>,90</span><span class="price__per">/mês</span></span>
+            </div>
+            <ul class="plan__list">
+              <li><svg class="i"><use href="#i-check"/></svg> Jogos online e 4K</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Casa toda conectada</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Suporte local</li>
+            </ul>
+            <a class="btn btn--outline btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">Contratar</a>
+          </article>
+        </div>
+
+        <!-- ---------- VIA RÁDIO ----------
+             PLACEHOLDER: velocidades e preços são EXEMPLOS. -->
+        <div class="plans__panel" role="tabpanel" id="panel-radio" aria-labelledby="tab-radio" hidden>
+          <article class="plan" data-plan="Internet via Rádio (plano de entrada)">
+            <p class="plan__type">Via Rádio</p>
+            <p class="plan__speed"><span class="plan__num" data-placeholder>XX</span><span class="plan__unit">MEGA</span></p>
+            <div class="price">
+              <span class="price__cur">R$</span><span class="price__int" data-placeholder>XX</span>
+              <span class="price__side"><span class="price__cents" data-placeholder>,90</span><span class="price__per">/mês</span></span>
+            </div>
+            <ul class="plan__list">
+              <li><svg class="i"><use href="#i-check"/></svg> Para regiões sem fibra</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Navegação e redes sociais</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Suporte local</li>
+            </ul>
+            <a class="btn btn--outline btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">Contratar</a>
+          </article>
+
+          <article class="plan plan--featured" data-plan="Internet via Rádio (plano avançado)">
+            <p class="plan__type">Via Rádio</p>
+            <p class="plan__speed"><span class="plan__num" data-placeholder>XX</span><span class="plan__unit">MEGA</span></p>
+            <div class="price">
+              <span class="price__cur">R$</span><span class="price__int" data-placeholder>XX</span>
+              <span class="price__side"><span class="price__cents" data-placeholder>,90</span><span class="price__per">/mês</span></span>
+            </div>
+            <ul class="plan__list">
+              <li><svg class="i"><use href="#i-check"/></svg> Para regiões sem fibra</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Vídeos e chamadas</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Suporte local</li>
+            </ul>
+            <a class="btn btn--red btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">Contratar</a>
+          </article>
+        </div>
+
+        <!-- ---------- RURAL ----------
+             PLACEHOLDER: velocidades e preços são EXEMPLOS. -->
+        <div class="plans__panel" role="tabpanel" id="panel-rural" aria-labelledby="tab-rural" hidden>
+          <article class="plan" data-plan="Internet Rural (plano de entrada)">
+            <p class="plan__type">Internet Rural</p>
+            <p class="plan__speed"><span class="plan__num" data-placeholder>XX</span><span class="plan__unit">MEGA</span></p>
+            <div class="price">
+              <span class="price__cur">R$</span><span class="price__int" data-placeholder>XX</span>
+              <span class="price__side"><span class="price__cents" data-placeholder>,90</span><span class="price__per">/mês</span></span>
+            </div>
+            <ul class="plan__list">
+              <li><svg class="i"><use href="#i-check"/></svg> Chácaras e sítios</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Conexão para o dia a dia</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Suporte local</li>
+            </ul>
+            <a class="btn btn--outline btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">Contratar</a>
+          </article>
+
+          <article class="plan plan--featured" data-plan="Internet Rural (plano avançado)">
+            <p class="plan__type">Internet Rural</p>
+            <p class="plan__speed"><span class="plan__num" data-placeholder>XX</span><span class="plan__unit">MEGA</span></p>
+            <div class="price">
+              <span class="price__cur">R$</span><span class="price__int" data-placeholder>XX</span>
+              <span class="price__side"><span class="price__cents" data-placeholder>,90</span><span class="price__per">/mês</span></span>
+            </div>
+            <ul class="plan__list">
+              <li><svg class="i"><use href="#i-check"/></svg> Propriedades rurais e negócios</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Mais dispositivos conectados</li>
+              <li><svg class="i"><use href="#i-check"/></svg> Suporte local</li>
+            </ul>
+            <a class="btn btn--red btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">Contratar</a>
+          </article>
+        </div>
+
+        <!-- ---------- INTERNET + TV ----------
+             640 MEGA + TV por R$119,00: valor encontrado no Instagram (confirmar se continua vigente). -->
+        <div class="plans__panel" role="tabpanel" id="panel-tv" aria-labelledby="tab-tv" hidden>
+          <article class="plan plan--featured plan--wide" data-plan="Combo 640 MEGA + TV por R$119,00">
+            <span class="plan__badge">Combo</span>
+            <div class="plan--wide__main">
+              <p class="plan__type">Internet + TV</p>
+              <p class="plan__speed"><span class="plan__num">640</span><span class="plan__unit">MEGA</span></p>
+              <p class="plan__plus"><svg class="i"><use href="#i-tv"/></svg> + TV · parceria Globoplay</p>
+            </div>
+            <div class="plan--wide__side">
+              <div class="price">
+                <span class="price__cur">R$</span><span class="price__int">119</span>
+                <span class="price__side"><span class="price__cents">,00</span><span class="price__per">/mês</span></span>
+              </div>
+              <ul class="plan__list">
+                <li><svg class="i"><use href="#i-check"/></svg> Internet de alta performance</li>
+                <li><svg class="i"><use href="#i-check"/></svg> Entretenimento para a família</li>
+                <li><svg class="i"><use href="#i-check"/></svg> Suporte local</li>
+              </ul>
+              <a class="btn btn--red btn--block" data-plan-link href="https://wa.me/5561996955196" target="_blank" rel="noopener">Contratar combo</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="plans__note reveal">
+          Não encontrou o plano ideal? <a data-wa href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener">Fale com a gente pelo WhatsApp</a> e montamos a melhor opção para o seu endereço.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         COBERTURA
+         A lista de regiões atendidas fica em main.js → CONFIG.coverage.
+         Ela alimenta os chips desta seção e o verificador de CEP/bairro.
+         ========================================================= -->
+    <section class="section coverage" id="cobertura">
+      <div class="container coverage__inner">
+        <div class="coverage__content">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span> Cobertura</p>
+          <h2 class="section__title reveal">Consulte a disponibilidade no seu <span class="hl">endereço</span></h2>
+          <p class="section__sub reveal">
+            Atendemos áreas urbanas e rurais do Distrito Federal. Digite seu CEP ou bairro e confira
+            se já chegamos até você.
+          </p>
+
+          <form class="checker reveal" id="checker" novalidate>
+            <label for="checker-input" class="sr-only">CEP ou bairro</label>
+            <div class="checker__field">
+              <svg class="i"><use href="#i-pin"/></svg>
+              <input id="checker-input" name="local" type="text" inputmode="text" autocomplete="postal-code" placeholder="Digite seu CEP ou bairro" required />
+              <button class="btn btn--red" type="submit">
+                <svg class="i"><use href="#i-search"/></svg><span>Verificar</span>
+              </button>
+            </div>
+            <div class="checker__result" id="checker-result" role="status" aria-live="polite"></div>
+          </form>
+
+          <div class="coverage__areas reveal">
+            <p class="coverage__areas-title">Regiões atendidas</p>
+            <!-- Preenchido automaticamente via JS a partir de CONFIG.coverage (main.js).
+                 Enquanto a lista estiver vazia, mostramos a mensagem abaixo. -->
+            <ul class="chips" id="coverage-list">
+              <li class="chips__empty" data-placeholder>Lista de bairros em atualização — consulte pelo WhatsApp.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mapa estilizado (decorativo) do DF com pontos de sinal -->
+        <div class="coverage__map reveal reveal--scale" aria-hidden="true">
+          <svg viewBox="0 0 400 300" class="dfmap">
+            <defs>
+              <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.2" fill="rgba(255,255,255,.12)"/>
+              </pattern>
+              <radialGradient id="mapGlow" cx=".5" cy=".5" r=".5">
+                <stop offset="0" stop-color="#E31E24" stop-opacity=".35"/>
+                <stop offset="1" stop-color="#E31E24" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#dots)"/>
+            <circle cx="200" cy="150" r="150" fill="url(#mapGlow)"/>
+            <path class="dfmap__shape" d="M48 62 L338 56 L344 96 L356 118 L350 160 L362 196 L346 238 L60 246 Z"/>
+            <path class="dfmap__lake" d="M196 140c10-10 28-6 30 6s-8 26-20 22-16-18-10-28z"/>
+            <g class="dfmap__pings">
+              <g style="--x:196px;--y:132px"><circle r="5"/><circle class="ping" r="5"/></g>
+              <g style="--x:150px;--y:96px;--pd:.6s"><circle r="4"/><circle class="ping" r="4"/></g>
+              <g style="--x:248px;--y:100px;--pd:1.2s"><circle r="4"/><circle class="ping" r="4"/></g>
+              <g style="--x:110px;--y:170px;--pd:.3s"><circle r="4"/><circle class="ping" r="4"/></g>
+              <g style="--x:290px;--y:180px;--pd:.9s"><circle r="4"/><circle class="ping" r="4"/></g>
+              <g style="--x:230px;--y:210px;--pd:1.5s"><circle r="3.5"/><circle class="ping" r="3.5"/></g>
+              <g style="--x:320px;--y:130px;--pd:1.8s"><circle r="3.5"/><circle class="ping" r="3.5"/></g>
+              <g style="--x:90px;--y:110px;--pd:2.1s"><circle r="3.5"/><circle class="ping" r="3.5"/></g>
+            </g>
+            <text x="200" y="278" text-anchor="middle" class="dfmap__label">BRASÍLIA · DISTRITO FEDERAL</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PARCERIAS — GLOBOPLAY
+         ========================================================= -->
+    <section class="section partners" id="parcerias">
+      <div class="container partners__inner">
+        <div class="partners__brand reveal reveal--left">
+          <!-- PLACEHOLDER: substitua este selo em texto pelo logotipo oficial do Globoplay
+               (arquivo fornecido pelo parceiro, ex.: assets/img/globoplay.svg), respeitando o manual de marca. -->
+          <div class="partner-seal">
+            <span class="partner-seal__label">Parceiro oficial</span>
+            <span class="partner-seal__name">globoplay</span>
+            <span class="partner-seal__tags"><span>Brasileirão</span><span>sportv</span></span>
+          </div>
+          <!-- Outros parceiros: apenas Globoplay confirmado até agora. Adicione novos selos aqui. -->
+        </div>
+        <div class="partners__content">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span> Parcerias</p>
+          <h2 class="section__title reveal">Mais que internet: <span class="hl">entretenimento</span> para toda a família</h2>
+          <p class="section__sub reveal">
+            Em parceria com Globoplay (Brasileirão, sportv) e outras marcas, a LC Telecom entrega
+            mais que internet: entretenimento para toda a família.
+          </p>
+          <div class="reveal">
+            <a class="btn btn--red btn--lg" data-wa data-msg="Olá, gostaria de saber mais sobre o combo Internet + TV (Globoplay) da LC Telecom" href="https://wa.me/5561996955196" target="_blank" rel="noopener">
+              <svg class="i"><use href="#i-tv"/></svg> Quero Internet + TV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         DEPOIMENTOS
+         PLACEHOLDER: substitua os 3 cards por depoimentos REAIS e autorizados
+         (ex.: avaliações do Google Meu Negócio ou comentários do Instagram).
+         Não publique depoimentos fictícios.
+         ========================================================= -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span> Depoimentos</p>
+          <h2 class="section__title reveal">Quem é LC <span class="hl">recomenda</span></h2>
+        </header>
+
+        <div class="testimonials__grid">
+          <figure class="quote reveal" data-placeholder>
+            <svg class="quote__mark"><use href="#i-quote"/></svg>
+            <div class="quote__stars" aria-label="5 de 5 estrelas"><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg></div>
+            <blockquote>Espaço reservado para o depoimento de um cliente de Internet Fibra Óptica. Substitua por um comentário real e autorizado.</blockquote>
+            <figcaption><span class="quote__avatar">A</span><span><strong>Nome do cliente</strong>Bairro · DF</span></figcaption>
+          </figure>
+          <figure class="quote reveal" style="--d:.1s" data-placeholder>
+            <svg class="quote__mark"><use href="#i-quote"/></svg>
+            <div class="quote__stars" aria-label="5 de 5 estrelas"><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg></div>
+            <blockquote>Espaço reservado para o depoimento de um cliente de Internet Rural ou via Rádio. Substitua por um comentário real e autorizado.</blockquote>
+            <figcaption><span class="quote__avatar">B</span><span><strong>Nome do cliente</strong>Região rural · DF</span></figcaption>
+          </figure>
+          <figure class="quote reveal" style="--d:.2s" data-placeholder>
+            <svg class="quote__mark"><use href="#i-quote"/></svg>
+            <div class="quote__stars" aria-label="5 de 5 estrelas"><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg><svg class="i"><use href="#i-star"/></svg></div>
+            <blockquote>Espaço reservado para o depoimento de uma empresa cliente. Substitua por um comentário real e autorizado.</blockquote>
+            <figcaption><span class="quote__avatar">C</span><span><strong>Nome da empresa</strong>Cliente empresarial · DF</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FAQ
+         ========================================================= -->
+    <section class="section faq" id="faq">
+      <div class="container faq__inner">
+        <header class="section__head section__head--left">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span> Dúvidas frequentes</p>
+          <h2 class="section__title reveal">Perguntas <span class="hl">frequentes</span></h2>
+          <p class="section__sub reveal">Não encontrou sua dúvida? Nosso time responde rapidinho pelo WhatsApp.</p>
+          <div class="reveal">
+            <a class="btn btn--ghost" data-wa href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener"><svg class="i"><use href="#i-whatsapp"/></svg> Tirar dúvidas</a>
+          </div>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq__item reveal" open>
+            <summary>Como contratar a LC Telecom?<span class="faq__icon"></span></summary>
+            <div class="faq__body">
+              <p>É simples: chame a gente no WhatsApp <strong>(61) 9 9695-5196</strong>, informe seu endereço para verificarmos a viabilidade técnica e escolha o plano ideal. Depois é só agendar a instalação.</p>
+            </div>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Qual o prazo de instalação?<span class="faq__icon"></span></summary>
+            <div class="faq__body">
+              <!-- PLACEHOLDER: informe o prazo real de instalação -->
+              <p data-placeholder>A instalação é agendada logo após a confirmação de viabilidade no seu endereço, em até <strong>X dias úteis</strong>.</p>
+            </div>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Quais são as formas de pagamento?<span class="faq__icon"></span></summary>
+            <div class="faq__body">
+              <!-- PLACEHOLDER: confirme as formas de pagamento aceitas -->
+              <p data-placeholder>Aceitamos <strong>PIX, boleto bancário e cartão</strong>. Consulte as opções disponíveis para o seu plano.</p>
+            </div>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Vocês atendem na zona rural?<span class="faq__icon"></span></summary>
+            <div class="faq__body">
+              <p>Sim! Com a Internet Rural e a Internet via Rádio levamos conexão a chácaras, sítios e regiões afastadas do DF. Consulte a disponibilidade para o seu endereço.</p>
+            </div>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Qual a diferença entre fibra e rádio?<span class="faq__icon"></span></summary>
+            <div class="faq__body">
+              <p>A <strong>fibra óptica</strong> leva o sinal por cabo de luz até sua casa, com máxima velocidade e estabilidade. A <strong>internet via rádio</strong> transmite o sinal sem fio entre antenas, sendo a solução ideal onde a fibra ainda não chega.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTATO / CTA FINAL
+         ========================================================= -->
+    <section class="cta" id="contato">
+      <div class="cta__bg" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <div class="cta__text">
+          <h2 class="cta__title reveal">Assine <span>já</span>.<br />Sua nova conexão começa agora.</h2>
+          <p class="reveal">Fale com o nosso time e descubra o melhor plano para o seu endereço.</p>
+        </div>
+        <div class="cta__channels">
+          <a class="channel reveal" data-wa href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener">
+            <span class="channel__icon"><svg class="i"><use href="#i-whatsapp"/></svg></span>
+            <span><small>WhatsApp</small><strong>(61) 9 9695-5196</strong></span>
+            <svg class="i channel__arrow"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="channel reveal" style="--d:.08s" data-wa data-number="5561999099256" href="https://wa.me/5561999099256?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener">
+            <span class="channel__icon"><svg class="i"><use href="#i-whatsapp"/></svg></span>
+            <span><small>WhatsApp alternativo</small><strong>(61) 9 9909-9256</strong></span>
+            <svg class="i channel__arrow"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="channel reveal" style="--d:.16s" href="tel:+5561996955196">
+            <span class="channel__icon"><svg class="i"><use href="#i-phone"/></svg></span>
+            <span><small>Ligue agora</small><strong>(61) 9 9695-5196</strong></span>
+            <svg class="i channel__arrow"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="channel reveal" style="--d:.24s" href="https://www.instagram.com/lctelecomdf/" target="_blank" rel="noopener">
+            <span class="channel__icon"><svg class="i"><use href="#i-instagram"/></svg></span>
+            <span><small>Instagram</small><strong>@lctelecomdf</strong></span>
+            <svg class="i channel__arrow"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       RODAPÉ
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/logo-lc.png" alt="LC Telecom" width="110" height="89" loading="lazy" />
+          <p>Há mais de uma década cuidando da sua conexão.</p>
+          <div class="footer__social">
+            <a class="social" href="https://www.instagram.com/lctelecomdf/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#i-instagram"/></svg></a>
+            <a class="social" data-wa href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="i"><use href="#i-whatsapp"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#cobertura">Cobertura</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Contato</h3>
+          <ul class="footer__contact">
+            <li><svg class="i"><use href="#i-whatsapp"/></svg> <a href="https://wa.me/5561996955196" target="_blank" rel="noopener">(61) 9 9695-5196</a></li>
+            <li><svg class="i"><use href="#i-whatsapp"/></svg> <a href="https://wa.me/5561999099256" target="_blank" rel="noopener">(61) 9 9909-9256</a></li>
+            <li><svg class="i"><use href="#i-instagram"/></svg> <a href="https://www.instagram.com/lctelecomdf/" target="_blank" rel="noopener">@lctelecomdf</a></li>
+            <li><svg class="i"><use href="#i-pin"/></svg> <span>DF 150 KM 12, LT 144, AP Sala 206<br />CEP 73150-065 · Brasília/DF</span></li>
+            <!-- PLACEHOLDER: horário de atendimento (não encontrado). Descomente e preencha:
+            <li><svg class="i"><use href="#i-clock"/></svg> <span>Seg. a sex. das Xh às Xh · Sáb. das Xh às Xh</span></li>
+            -->
+          </ul>
+        </div>
+
+        <div class="footer__map">
+          <h3>Onde estamos</h3>
+          <!-- Mapa do Google Maps (sem chave de API). loading="lazy": só carrega quando o usuário rola até aqui.
+               Para usar o pin exato do perfil da empresa no Google, troque o src pelo link de
+               "Compartilhar → Incorporar um mapa" do Google Maps. -->
+          <div class="map-frame">
+            <iframe
+              title="Mapa: LC Telecom, DF 150 KM 12, Brasília-DF"
+              src="https://maps.google.com/maps?q=DF-150%20km%2012%2C%2073150-065%2C%20Bras%C3%ADlia%20-%20DF&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+          <a class="footer__maplink" href="https://www.google.com/maps/search/?api=1&query=DF-150%20km%2012%2C%2073150-065%2C%20Bras%C3%ADlia%20-%20DF" target="_blank" rel="noopener">Abrir no Google Maps <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 - LC Telecom - Todos os direitos reservados.</p>
+        <!-- PLACEHOLDER: CNPJ não encontrado. Preencha e remova o atributo "hidden":
+             <p>CNPJ: 00.000.000/0000-00</p> -->
+        <p class="footer__cnpj" hidden>CNPJ: </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp (sempre visível) -->
+  <a class="wa-float" data-wa href="https://wa.me/5561996955196?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20LC%20Telecom" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+    <svg class="i"><use href="#i-whatsapp"/></svg>
+    <span class="wa-float__label">Assine já</span>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
